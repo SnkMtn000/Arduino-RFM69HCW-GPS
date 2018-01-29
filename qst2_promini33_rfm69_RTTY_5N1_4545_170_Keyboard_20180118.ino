@@ -1,6 +1,7 @@
 /*
  * My atempt to create a simple Morse code sender
- * for rfm22b
+ *  KC1ENN
+ * for rfm69hcw
  * on a ProMini 3.3
  * 
  * 1) force all characters to upper case - failed
