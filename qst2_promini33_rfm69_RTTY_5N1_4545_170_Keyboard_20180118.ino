@@ -42,7 +42,7 @@ float stop_bit_time = bit_time * 2;
 int index = 0;
 String inputString = "";         // a String to hold incoming data
 
-String myCall = "... CQ  CQ  CQ DE  KC1ENN   KC1ENN   KC1ENN PSE K ...    ";
+String myCall = "... CQ  CQ  CQ DE  MYCALLSIGN  MYCALLSIGN  MYCALLSIGN PSE K ...    ";
 boolean stringComplete = false;  // whether the string is complete
 uint32_t myMark;
 uint32_t mySpace;
