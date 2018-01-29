@@ -29,7 +29,7 @@ boolean stringComplete = false;  // whether the string is complete
 long myFrequency = 433200000;
 //long myFrequency = 915000000;
 String myString = "";
-String myCall = "... CQ   CQ   CQ   KC1ENN   KC1ENN   KC1ENN   PSK ...    ";
+String myCall = "... CQ   CQ   CQ   MYCALLSIGN  MYCALLSIGN  MYCALLSIGN   PSK ...    ";
 int myStringLen = 0;
 
 void setup(){
