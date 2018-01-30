@@ -12,7 +12,7 @@ Three modes supported, Morse, Feld Hell, and RTTY 5N1 170Hz.
 
 Three sketches per mode.  1) a keyboard input mode, a raw beacon mode, and one that transmits GPS telemetry.
 
-For Feld Helland More I'm using modulation type for register 0x02 = 0x34 of which bit 4 is undefined but works!  Need to flix/clarify this.
+For Feld Hell and more I'm using modulation type for register 0x02 = 0x34 of which bit 4 is undefined but works!  Need to flix/clarify this.  Probably should be 0x48.  I need to test.
 
 Good luck.  Enjoy.
 
