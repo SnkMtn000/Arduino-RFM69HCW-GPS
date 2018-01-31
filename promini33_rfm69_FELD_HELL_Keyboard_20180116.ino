@@ -22,6 +22,7 @@
 //#define radioPower 0x5B  //  9 dBm
 //#define radioPower 0x5E  // 12 dBm
 #define radioPower 0x7F  // 17 dBm
+#define radioModulation 0x48  //  Modulation for OOK, Continuous w.o bit synch, OOK, no shaping
 
 char mytext[80];
 String inputString = "";         // a String to hold incoming data
@@ -104,7 +105,7 @@ void serialEvent() {
 }
 
 void setupRFM69() {
-  writeReg(0x02,0x34);  //  Modulation for OOK, Continuous w.o bit synch, OOK, no shaping
+  writeReg(0x02,radioModulation);  
   setFrequency(myFrequency);
   Serial.print("Frequency set to "); Serial.println(myFrequency);
   writeReg(0x26,0x07); // CLK off to save power
