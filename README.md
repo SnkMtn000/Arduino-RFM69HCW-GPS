@@ -6,6 +6,9 @@ My code/sketches are built on previously shared code by three other contributers
 
 Supported board I created and shared at:  https://oshpark.com/shared_projects/vCLw90ht   I drive everything, promini33, rfm69hcw and GPS,  from the pro-mini 3.3v requlator with success from a 9vdc battery, but cannot not recommend this.  I'm using a Ublox NEO-6 GPS Module with great success.  Take care of the ceramic antenna.  It is a brick dangling on a thread and when the center conductor breaks fails to work.  I've repaird mine by stripping back the thin coax and making a very tiny light weight and high gain 1.5 GHz ground plane antenna.
 
+***** a quick note on an issue with the board *****
+The signal pin on sma connector the board is cuderneath the coating and can be reviled scraping off the coating exposing the copper pad.  Thisd is due to my inexperience with board design, the device foot print I used, turn around time and cost of a run of boards that I must eat.  I found it a minor problem other might find it a pain.  I added two poor quality images of before and after scraping to expose the copper.
+
 These sketches may also work with the adafruit feather M0 with the noted pin changes in software.  I do not have one and could not test.  (In process).  Check the pin definitions on back of feather.
 
 Three modes supported, Morse, Feld Hell, and RTTY 5N1 170Hz.
