@@ -1,0 +1,57 @@
+Notes and disclaimer on the Osh Park Board:
+
+This is not a perfect board.  I'll be the first to admit this.  It most certainly has short commings.  It is designed 
+to use an arduino pro mini board of the 3.3v flavor.  Do not attempt to use a 5.0v version of this board as
+the Hope RFM69HCW will be destroyed.
+
+1) The SMA foot print I found online is not a perfect match.  The copper pad for the signal pin on the back 
+of the board needs to be exposed.  I do this by gently scraping off the coating with a knife.  I also found I had to
+ cut off two grounds and bend the signal pin to get it to fit the tickeness of the board.  May just be the cheap SMA
+I got online!
+
+2) I inadvertainly place the pin assignments for GPS backwards meaning it needs to be mounted on the back of the board.
+Refer to JPGs.
+
+3) The foot print for the Arduino pro mini 3.3 volt has plated through holes that are not connectd to anything.  
+The only plated through holes that should be used are the two rows of header as shown in the photos.
+
+4)  I could not find a foot print for the RFM69HCW and rolled my own.  I will publish OSH Park files here
+ at a future date including my foot print.
+
+This board is designed for the RFM69HCW, 433 or 915 MHz chips.  It will not work with any other variation
+of the RFM69xxx family.  It will not work with LORA chips.  It most certainly will not work with an
+RFM22b!!!!!
+
+Assembly:
+
+1)  The boards I recieved work perfectly .  I recommend assembly in this order.
+
+2)  Ring out the bare board before assembly.  Why not?  If you do not know what that means google it.
+
+3)  Tin with solder one corner pad only.  Place the rfm69hcw follwing the orientation as printed on the board.
+Heat and relow the solder to stick the IC to the board.  Make sure it is oriented evenly on each pad before
+ continuing.
+
+4)  Once happy with the orientation solder another corner pad but more securely.  The a third pad.  The go back 
+and ensure the first pad you soldered had a good elctrical bond.  If not reflow again.
+
+5)  Solder every other pad and give it time to cool.  Go back and finish solder the rest of the pad.
+
+6)  I next solder onthe 2 12xpin headers.  I like headers for socketing the arduino.  It allows reuse.  BUT,...
+the beast way I found to do this was to first put pins on the arduino, then press the headers on the pins,
+then into the board and solder as above.
+
+7)  The board requires the serial adapter to program but can operate with the GPS using a 5V-12V battery
+ on the RAW pin, on the P1 header.
+
+8)  If it does not work out of the can, then please ring it out again.  It is not impossible to have
+created a solder bridge between pads of the rfm69 or...an open due to not enough solder between pads.
+
+:)
+
+Good luck.
+
+  
+
+
+
